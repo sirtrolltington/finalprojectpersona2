@@ -1,0 +1,423 @@
+/* homepage styling */ 
+body.homepage {
+    background-image: url(../images/background.jpg); 
+    background-size: cover; /* Make the image cover the whole viewport */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Keep the image fixed when scrolling */
+    height: 100vh; /* Ensure the body takes the full viewport height */
+  }
+
+  a.home{ 
+    color: black;
+    font-family: "Expose-Regular", Arsenal; 
+    letter-spacing: 4px;
+    font-size: 4em;
+    text-decoration: none; 
+    transition: transform 0.3s ease; 
+  }
+
+  a.home:visited{
+    color: black;
+    font-family: "Expose-Regular", Arsenal; 
+    letter-spacing: 4px;
+    font-size: 4em;
+    text-decoration: none; 
+    transition: transform 0.3s ease; 
+  }
+
+  ul{ 
+    list-style-type: none;
+  }
+
+/* Link Hover Animations */ 
+
+a:hover{ 
+    transform: rotate(6deg); 
+    transform: scale(1.2); 
+  }
+
+/* GAMES PAGE STYLING */ 
+body { 
+  background-color: black; 
+  background-image: url(../images/bg_red_line_01b044042d3de0bf2fa64ba808a727f6.png), url(../images/bg_red_dot_d849572b3f0934e660bdd7b972b54869.png); 
+  background-size: cover; 
+  height: 100vh; 
+}
+
+nav.games, nav.about{ 
+  display: flex; 
+  justify-content: flex-end; 
+  padding: 30px; 
+}
+
+a{
+  text-decoration: none; 
+  color: white;
+  font-family: "Arsenal"; 
+}
+
+a:visited{
+  text-decoration: none; 
+  color: white;
+  font-family: "Arsenal"; 
+}
+
+a.games, a.about{ 
+  color: white; 
+  font-family: "Expose-Regular", "Arsenal"; 
+  letter-spacing: 4px;
+  font-size: 3em;
+  text-decoration: none; 
+  transition: transform 0.3s ease; 
+}
+
+li.games, a.about{ 
+  padding: 0; 
+  margin-right: 30px; 
+  display: flex; 
+}
+
+li.home{
+  padding: 30px; 
+  display: flex; 
+}
+
+h1{ 
+  color: white; 
+  font-family: "Expose-Regular", "Arsenal"; 
+  letter-spacing: 4px; 
+  font-size: 5em;
+  text-align: center; 
+}
+
+p{ 
+  color: white; 
+  font-family: "Arsenal", sans-serif; 
+  font-size: 2em; 
+  text-align: center; 
+}
+
+p.individual{ 
+  color: white; 
+  font-family: "Arsenal", sans-serif; 
+  font-size: 2em; 
+  text-align: center; 
+  padding: 0 100px; 
+}
+
+
+p.about{ 
+  color: white; 
+  font-family: "Arsenal", sans-serif; 
+  font-size: 2em; 
+  text-align: center; 
+  margin-left: auto; 
+  margin-right: 0; 
+  padding: 0 100px; 
+  background-color: #00000033;
+}
+
+p.test{ 
+  color: black;
+  font-family: "Expose-Regular", Arsenal; 
+  letter-spacing: 4px;
+  font-size: 2em;
+  text-decoration: none; 
+}
+
+p.test:hover{ 
+  color: red;
+  font-family: "Expose-Regular", Arsenal; 
+  letter-spacing: 4px;
+  font-size: 2em;
+  text-decoration: none; 
+}
+
+p.test1{ 
+  color: white;
+  font-family: "Expose-Regular", Arsenal; 
+  letter-spacing: 4px;
+  font-size: 2em;
+  text-decoration: none; 
+}
+
+p.test1:hover{ 
+  color: red;
+  font-family: "Expose-Regular", Arsenal; 
+  letter-spacing: 4px;
+  font-size: 2em;
+  text-decoration: none; 
+}
+
+
+/* Image & Figure styling */ 
+@media screen and (min-width: 400px){
+
+  figure{ 
+    color: white; 
+    font-family: "Arsenal", sans-serif; 
+    font-size: 2em;  
+    padding: 20px; 
+    text-align: center; 
+  }
+
+  img{
+    border: 2px solid gold; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adds shadow to the border */
+    transition: transform 0.3s ease; 
+    margin-left: auto; 
+    margin-right: auto; 
+	}
+
+  img:hover{ 
+    transform: scale(1.1); 
+  }
+
+  /* YouTube Embed STYLING */ 
+iframe { 
+  border: 2px solid gold; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adds shadow to the border */
+}
+
+section#game-trailer{ 
+  display: grid;
+	justify-content: center; 
+	align-content: center; 
+	grid-template-rows: auto; 
+	padding: 100px; 
+}
+
+h1.about{ 
+  text-align: right;
+}
+}
+
+@media (min-width: 1440px) { 
+
+section#game-gallery{ 
+  display: grid;
+	justify-content: center; 
+	align-content: center; 
+	grid-template-columns: 30% 30% 30%; 
+	grid-template-rows: auto; 
+	padding: 100px; 
+}
+
+  /* YouTube Embed STYLING */ 
+  iframe { 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 660px; 
+    height: 415px; 
+    border: 2px solid gold; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adds shadow to the border */
+  }
+
+  section#about{ 
+    display: grid;
+    justify-content: right; 
+    align-content: right; 
+    grid-template-columns: 25% 50%; 
+    grid-template-rows: auto; 
+    padding: 50px; 
+  }
+
+  h1.about{ 
+  text-align: right;
+  padding-right: 200px; 
+}
+}
+
+/* ABOUT PAGE STYLING */ 
+body.about {
+  background-image: url(../images/about.jpeg); 
+  background-size: cover; /* Make the image cover the whole viewport */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Keep the image fixed when scrolling */
+  height: 100vh; /* Ensure the body takes the full viewport height */
+}
+
+h1.about{ 
+  text-align: right;
+  padding-right: 200px; 
+}
+
+	/* Focus Elements */
+	*:focus{
+		border: 2px solid #ff0000;
+	} 
+
+  @media screen and (prefers-reduced-motion: reduce){
+	
+    html{
+      scroll-behavior: auto; 
+    }
+  
+    nav a:hover{
+      transition: none;
+      text-transform: none;
+    }
+  
+    img:hover{ 
+      transform: none; 
+    }
+  }
+  
+
+/* FONT DEFINITIONS */ 
+
+  nav.home{ 
+    display: grid;            /* Turn the parent container into a grid */
+    place-items: center;      /* Center content both horizontally and vertically */
+    grid-template-columns: auto;
+    grid-template-rows: auto; 
+    height: 100vh; 
+  }
+ 
+  /* font definitions */ 
+  .arsenal-regular {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Define the Regular weight of the font */
+@font-face {
+  font-family: "Expose-Regular";
+  src: url("/fonts/Expose-Regular.otf") format('otf'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* MENU ANIMATIONS */
+.link-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 0px 16px;
+
+  .fallback {
+    font-size: 2.25em;
+    letter-spacing: 4px;
+    line-height: 0;
+    opacity: 0;
+    position: relative;
+    top: 15px;
+    left: 0;
+  }
+  .shape-wrapper { 
+    display: none; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  &:hover {
+    z-index: 9999;
+    .shape-wrapper { 
+      transform: rotate(-6deg);
+      display: block; 
+      .shape.cyan-fill {
+        transform: scale(3,.1);
+      }
+    }
+    .img-wrapper {
+      p {
+       animation: tiltBounce .15s ease;
+       animation-fill-mode: forwards;
+       display: block;
+        &.normal {
+           mix-blend-mode: darken;
+        }
+      }
+    }
+  }
+}
+
+.img-wrapper {
+  p {
+    display: block;
+    left: 0;
+    right: 0;
+    top: -5px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 999;
+    &.normal {
+      display: block;
+    }
+    &.active {
+      display: none;
+      z-index: -1;
+    }
+  }
+}
+.shape-wrapper {
+  filter: sepia(50%) saturate(3);
+  .shape {
+    transition: all .1s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    overflow: hidden;
+    svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &.cyan-fill {
+      mix-blend-mode: screen;
+      animation-delay: 0.05s;
+      animation-duration: .4s;
+    }
+    &.red-fill {
+      animation-duration: .45s;
+      animation-delay: 0.08s;
+      opacity: .8;
+    }
+  }
+}
+
+
+.jelly {
+  -webkit-animation-name: jelly;
+          animation-name: jelly;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@keyframes tiltBounce {
+  0% {
+    transform: scale(1) rotate(-7deg);
+  }
+  50% {
+    transform: scale(1.5) rotate(-7deg);
+  }
+  100% {
+    transform: scale(1.15) rotate(-7deg);
+  }
+}
+@keyframes tiltBounceAlt {
+  0% {
+    transform: scale(1) rotate(7deg);
+  }
+  50% {
+    transform: scale(1.5) rotate(7deg);
+  }
+  100% {
+    transform: scale(1.15) rotate(7deg);
+  }
+}
+@keyframes jelly {
+  0% {
+    width: 100%; transform: scale(1.25,1) skewX(20deg) translateY(3px) rotateX(40deg) rotateY(10deg) rotateZ(-10deg);
+  }
+  50% { width: 100%; transform: scale(1.25,1.1) skewX(-15deg) translateY(-2px) translateZ(-30px); }
+  100% { width: 100%; transform: scale(1.25,1) skewX(20deg) translateY(3px) rotateX(-40deg) rotateY(-10deg) rotateZ(-15deg); }
+}
